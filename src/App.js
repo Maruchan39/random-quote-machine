@@ -17,6 +17,7 @@ function App() {
     const response = await fetch(url);
     const newQuotes = await response.json();
     setQuotes(newQuotes);
+    setNumber(Math.floor(Math.random() * newQuotes.length))
     setLoading(false);    
   };
 
@@ -25,7 +26,7 @@ function App() {
   const randomQuote = () => {
     let randomNumber = Math.floor(Math.random() * quotes.length);
 
-    if (randomNumber === number) {
+    if (randomNumber === number && randomNumber !==  quotes.length) {
       randomNumber = number + 1;
     }
     setNumber(randomNumber);
