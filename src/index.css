@@ -1,0 +1,30 @@
+#quote-box {
+  margin-top: 25%;
+  padding: 20px;
+  height: 20rem;
+  width: 75%;
+  border: 1px;
+}
+
+#text {
+  height: 75%;
+}
+#author {
+  text-align: right;
+  height: 2rem;
+}
+
+#new-quote {
+  float: right;
+}
+
+
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: none;
+}
