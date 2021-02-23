@@ -1,9 +1,8 @@
 #quote-box {
-  margin-top: 25%;
+  margin-top: 15%;
   padding: 20px;
-  height: 20rem;
+  height: 30rem;
   width: 75%;
-  border: 1px;
 }
 
 #text {
@@ -14,11 +13,6 @@
   height: 2rem;
 }
 
-#new-quote {
-  float: right;
-}
-
-
 .fade-out {
   opacity: 0;
   transition: opacity 0.5s;
@@ -27,4 +21,21 @@
 .btn:focus {
   outline: none;
   box-shadow: none;
+}
+
+.btn-group {
+  margin-top: 3rem;
+  float: left;
+}
+
+@media (max-width: 667px) {
+  .btn-group {
+    float: right;
+  }
+}
+
+@media (orientation: landscape) {
+  .btn-group {
+    float: right;
+  }
 }
