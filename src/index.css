@@ -1,5 +1,5 @@
 #quote-box {
-  margin-top: 15%;
+  margin-top: 10%;
   padding: 20px;
   height: 30rem;
   width: 75%;
@@ -11,6 +11,7 @@
 #author {
   text-align: right;
   height: 2rem;
+  margin-top: 4rem;
 }
 
 .fade-out {
@@ -23,19 +24,35 @@
   box-shadow: none;
 }
 
-.btn-group {
+.buttons {
   margin-top: 3rem;
   float: left;
 }
 
 @media (max-width: 667px) {
-  .btn-group {
+  .buttons {
     float: right;
+    margin-top: 8rem;
   }
 }
 
-@media (orientation: landscape) {
-  .btn-group {
+@media (orientation: landscape) and (max-height: 400px) {
+  .buttons {
     float: right;
+  }
+
+  #quote-box {
+    margin-top: 5%;
+    padding: 0px;
+    height: 20rem;
+  }
+
+  #text {
+    height: 25%;
+    font-size: 1.2em;
+  }
+
+  #author {
+    font-size: 1.2em;
   }
 }

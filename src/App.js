@@ -55,7 +55,7 @@ function App() {
           {quotes[number].author}
         </h4>
       )}
-      <div className="btn-group" role="group">
+      <div className="buttons">
         <a
           href="https://twitter.com/share?ref_src=twsrc%5Etfw"
           id="twitter-share-button"
@@ -63,7 +63,7 @@ function App() {
           data-show-count="false"
           target="_blank"
         >
-          <FaTwitterSquare size="3rem" color="black" />
+          <FaTwitterSquare size="2.5rem" color="black" />
         </a>
         <button
           className="btn btn-light"
