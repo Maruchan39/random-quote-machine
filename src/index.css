@@ -2,7 +2,7 @@
   margin-top: 10%;
   padding: 20px;
   height: 30rem;
-  width: 75%;
+  width: 95%;
 }
 
 #text {
@@ -38,7 +38,7 @@
 
 @media (orientation: landscape) and (max-height: 400px) {
   .buttons {
-    float: right;
+    display: inline-block;
   }
 
   #quote-box {
@@ -54,5 +54,6 @@
 
   #author {
     font-size: 1.2em;
+    float: right;
   }
 }
