@@ -2,9 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./index.css";
 import { FaTwitterSquare } from "react-icons/fa";
 
-const url = "https://type.fit/api/quotes";
 
-// Inspect tweeting
+const url = "https://type.fit/api/quotes";
 
 function App() {
   const [quotes, setQuotes] = useState([]);
@@ -57,7 +56,7 @@ function App() {
       <div className="buttons">
         <a
           href= {"https://twitter.com/intent/tweet?text=" + '"'  + quotes[number].text + '"' + "%0a" + quotes[number].author}
-          id="twitter-share-button"
+          id="tweet-quote"
           className="btn"
           data-show-count="false"
           target="_blank"
