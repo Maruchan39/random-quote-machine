@@ -4,7 +4,6 @@ import { FaTwitterSquare } from "react-icons/fa";
 
 const url = "https://type.fit/api/quotes";
 
-// Work more on landscape view
 // Inspect tweeting
 
 function App() {
@@ -57,7 +56,7 @@ function App() {
       )}
       <div className="buttons">
         <a
-          href="https://twitter.com/share?ref_src=twsrc%5Etfw"
+          href= {"https://twitter.com/intent/tweet?text=" + '"'  + quotes[number].text + '"' + "%0a" + quotes[number].author}
           id="twitter-share-button"
           className="btn"
           data-show-count="false"
