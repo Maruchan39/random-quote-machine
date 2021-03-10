@@ -1,8 +1,8 @@
 #quote-box {
   margin-top: 10%;
   padding: 20px;
-  height: 30rem;
-  width: 95%;
+  height: 20rem;
+  width: 65%;
 }
 
 #text {
@@ -34,6 +34,11 @@
     float: right;
     margin-top: 8rem;
   }
+
+  #quote-box {
+    width: 95%;
+    height: 25rem;
+  }
 }
 
 @media (orientation: landscape) and (max-height: 400px) {
@@ -44,12 +49,14 @@
   #quote-box {
     margin-top: 5%;
     padding: 0px;
-    height: 20rem;
+    height: 12rem;
+    width: 95%;
   }
 
   #text {
     height: 25%;
     font-size: 1.2em;
+    margin-bottom: 3rem;
   }
 
   #author {
